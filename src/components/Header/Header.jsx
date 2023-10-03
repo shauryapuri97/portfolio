@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./header.css";
+import CV from '../../assets/ShauryaPuriCV.pdf'
 
 const Header = () => {
   const downloadCV = () => {
@@ -16,7 +17,7 @@ const Header = () => {
           <ul className="nav__list">
             <li className="nav__item">
               <a
-                href="./assets/profile.jpg"
+                href={CV}
                 className="button--header"
                 download
               >
@@ -26,7 +27,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="nav__toggle" onClick={() => downloadCV()}>
-          <a href="./assets/profile.jpg" className="button--header" download>
+          <a href={CV} className="button--header" download>
             Download CV
           </a>
         </div>

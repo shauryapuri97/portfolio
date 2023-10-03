@@ -143,6 +143,7 @@ img {
 
 .grid {
   display: grid;
+  align-self: center;
   gap: 1.5rem;
 }
 
