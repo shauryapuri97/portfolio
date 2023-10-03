@@ -20,6 +20,7 @@ const Header = () => {
                 href={CV}
                 className="button--header"
                 download
+                target="_blank"
               >
                 Download CV
               </a>
@@ -27,7 +28,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="nav__toggle" onClick={() => downloadCV()}>
-          <a href={CV} className="button--header" download>
+          <a href={CV} className="button--header" download target="_blank">
             Download CV
           </a>
         </div>
